@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feed Instagram Camilo Cortes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+</head>
+
+<body>
+  <!-- inicio navbar -->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <i class="bi bi-instagram"></i>
+        Instagram
+      </a>
+      <form class="d-flex" role="search">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create New Post
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Create New Post
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body pb-0">
+                <h5>Caption:</h5>
+              </div>
+              <div class="form-floating m-2">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Comments</label>
+                <button type="button" class="btn btn-secondary m-1">
+                  <i class="bi bi-camera-fill"></i>
+                </button>
+                <button type="button" class="btn btn-secondary m-1">
+                  <i class="bi bi-geo-alt-fill"></i>
+                </button>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  Close
+                </button>
+                <button type="button" class="btn btn-success">Publish</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Close Modal -->
+        <!--  button gear -->
+        <div class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle m-1" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="bi bi-gear-wide"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <button class="dropdown-item" type="button">Profile</button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                Accesibility
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item" type="button">
+                Privacy and Data
+              </button>
+            </li>
+            <li>
+              <button class="dropdown-item border-top text-danger" type="button">
+                Log Out
+              </button>
+            </li>
+          </ul>
+          <!--  button gear -->
+        </div>
+      </form>
+    </div>
+  </nav>
+  <!-- cierre navbar -->
+  <!-- nav and tabs -->
+  <ul class="nav nav-tabs d-flex justify-content-center border-0 " id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link border-0" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true">
+        <i class="bi bi-grid-3x3"></i>
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link border-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+        <i class="bi bi-app"></i>
+      </button>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+    <!-- post tres filas -->
+    <div class="container text-center p-2 b-2">
+      <div class="row">
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+      </div>
+    </div>
+    <div class="container text-center p-2 b-2">
+      <div class="row">
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+      </div>
+    </div>
+    <div class="container text-center p-2 b-2">
+      <div class="row">
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+        <div class="col-6 col-md-4">
+          <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+        </div>
+      </div>
+    </div>
+    <!-- cierre post tres filas -->
+    </div>
+    <div class="tab-pane fade m-2" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <!-- posts de 1 fila -->
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center mb-2" style="height: 100%; width: 100%">
+        <div class="card text-center" style="height: 520px; width: 520px">
+          <div class="card-header d-flex mb-3 ">
+            <p class="me-auto p-2 fw-bolder fs-5" >Featured</p>
+            <p class="p-2 fs-6">Date DD/MM</p>
+          </div>
+          <div class="card-body m-0" style="height: 100%; width: 100%">
+            <img src="https://picsum.photos/200/300" class="img-fluid" alt="imagen" />
+          </div>
+          <div class="card-footer d-flex flex-column align-items-start">
+            <p class="fw-bolder">Likes</p>
+            <p>descripcion</p>
+          </div>
+        </div>
+      </div>
+         <!-- end post  de 1 fila-->
+    </div>
+  </div>
+  <!-- cierre nav and tabs -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
